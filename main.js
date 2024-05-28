@@ -59,20 +59,20 @@
 
  /*------------------------------LAB1----------------------------------*/
 
-//  let url1 = "https://coffee.alexflipnote.dev/random.json";
+ let url1 = "https://coffee.alexflipnote.dev/random.json";
 
   
-//    fetch(url1 , {method: "GET"})
-//     .then(response => response.json())
-//     // .then(data => console.log(data))
+   fetch(url1 , {method: "GET"})
+    .then(response => response.json())
+    // .then(data => console.log(data))
 
-//     .then(data => {
-//            let GET2 = document.querySelector(".img1");
-//            let img = document.createElement("img");
-//            img.src = data.file;
-//            GET2.append(img);
-//            console.log(data);
-//     })
+    .then(data => {
+           let GET2 = document.querySelector(".img1");
+           let img = document.createElement("img");
+           img.src = data.file;
+           GET2.append(img);
+           console.log(data);
+    })
 
 
 
@@ -87,14 +87,6 @@
          console.log(response);
          console.log(data);
 
-        //  let Chacters = document.querySelector(".Chacters");
-        //  let Chacter1 = document.querySelector(".name");
-        //  let characterimg = document.querySelector(".img");
-
-        //  console.log(Chacters);
-     
-        // Chacter1.innerHTML = data.results[0].name;
-        // characterimg.src = data.results[0].image;
 
 
         for (let i = 0; i < data.results.length; i++) {
